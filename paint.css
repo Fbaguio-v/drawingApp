@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "FlappyBirdy";
+    src: url("/css/flappybirdy/FlappyBirdy.ttf") format("truetype");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    height: 100dvh;
+    width: 100vw;
+    width: 100dvw;
+    font-family: "FlappyBirdy";
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    > div:first-child {
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+
+        > select {
+            height: 1.5rem;
+        }
+    }
+
+    > canvas {
+        border: 0.2rem solid;
+        image-rendering: pixelated;
+    }
+}
